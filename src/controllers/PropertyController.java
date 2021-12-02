@@ -36,6 +36,7 @@ public class PropertyController extends DBController {
         try {
 
             this.dbConnect = DriverManager.getConnection(DBURL, USERNAME, PASSWORD);
+            System.out.println("Connection established!\n");
         } catch (SQLException e) {
 
             e.printStackTrace();
