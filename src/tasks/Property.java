@@ -36,7 +36,8 @@ public class Property {
 
         Calendar calendar = Calendar.getInstance();
         this.submitted = new java.sql.Date(System.currentTimeMillis());
-        this.expiry = new java.sql.Date(System.currentTimeMillis());
+        calendar.add(Calendar.MONTH, 1);
+        this.expiry = new java.sql.Date(calendar.getTimeInMillis());
 
     }
 
