@@ -15,7 +15,7 @@ public class PropertyController extends DBController {
 
     }
 
-    public void setProperty(Property property) {
+    public void addProperty(Property property) {
 
         try {
 
@@ -44,6 +44,40 @@ public class PropertyController extends DBController {
 
     }
 
+    public void updateStatus(int propertyID, String status) {
+
+        try {
+            String query = "UPDATE property SET status = ? WHERE propertyID = ?";
+            PreparedStatement stmt = dbConnect.prepareStatement(query);
+            stmt.setString(0, status);
+            stmt.setInt(1, propertyID);
+
+            stmt.executeUpdate();
+            stmt.close();
+
+        } catch (SQLException e) {
+
+        }
+
+    }
+
+    public void removeProperty(int propertyID) {
+
+        try {
+            String query = "DELETE FROM property WHERE propertyID = ?";
+            PreparedStatement stmt = dbConnect.prepareStatement(query);
+            stmt.setInt(0, 1);
+
+            stmt.executeUpdate();
+            stmt.close();
+
+        } catch (SQLException e) {
+
+        }
+
+    }
+
+    // do on laptop
     public void getAllProperty() {
 
         try {
@@ -89,11 +123,11 @@ public class PropertyController extends DBController {
 
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         PropertyController p = new PropertyController();
         Property prop = new Property(0, 0, "123 street", "Apartment", 2, 1, 1, "NW");
 
-        p.setProperty(prop);
+        p.addProperty(prop);
     }
 
 }

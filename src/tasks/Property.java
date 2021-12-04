@@ -41,6 +41,29 @@ public class Property {
 
     }
 
+    public void addProperty(Boolean feePaid) {
+
+        if (feePaid) {
+
+            propertyController.addProperty(this);
+
+        } else {
+
+            return;
+        }
+
+    }
+
+    public void updateStatus(String status) {
+
+        propertyController.updateStatus(this.propertyID, status);
+
+    }
+
+    public void removeProperty() {
+        propertyController.removeProperty(this.propertyID);
+    }
+
     // getters
     public int getPropertyID() {
         return this.propertyID;
