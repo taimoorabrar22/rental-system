@@ -8,4 +8,5 @@ public class Login{
     public Login getOnlyInstance(){
         System.out.println("getOnlyInstance method called.");
         return onlyInstance;
+    }
 }
