@@ -125,7 +125,7 @@ public class PropertyController extends DBController {
 
     public static void main(String[] args) {
         PropertyController p = new PropertyController();
-        Property prop = new Property(0, 0, "123 street", "Apartment", 2, 1, 1, "NW");
+        Property prop = new Property(1, 0, "123 street", "Apartment", 2, 1, 1, "NW");
 
         p.addProperty(prop);
     }

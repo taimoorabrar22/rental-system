@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8abe3fc-dca5-45bd-8122-84b9d47731a2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/source-files/rentalsystem.sql" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/rentalsystem.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/DBController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/DBController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/PropertyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/PropertyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tasks/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tasks/Property.java" afterDir="false" />
-    </list>
+    <list default="true" id="c8abe3fc-dca5-45bd-8122-84b9d47731a2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1638423602255</updated>
       <workItem from="1638423607325" duration="780000" />
-      <workItem from="1638494535447" duration="982000" />
+      <workItem from="1638494535447" duration="1207000" />
     </task>
     <servers />
   </component>
