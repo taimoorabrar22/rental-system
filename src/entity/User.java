@@ -14,4 +14,28 @@ public abstract class User {
         return globalUserID++;
     }
 
+    public String getFirstName(){
+        return this.firstName;
+    }
+
+    public String getLastName(){
+        return this.lastName;
+    }
+
+    public String getPassWord(){
+        return this.passWord;
+    }
+
+    public String getEmail(){
+        return this.email;
+    }
+
+    public String getUserType(){
+        return this.userType;
+    }
+
+    public int getUserId(){
+        return this.userID;
+    }
+
 }
