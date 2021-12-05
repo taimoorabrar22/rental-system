@@ -13,7 +13,7 @@ public class LandLord extends User {
         this.passWord = password;
         this.email = email;
         this.userID = increment();
-
+        this.userType = "landlord";
     }
 
     public void listProperty(int propertyID, String address, String type, int bed, int bath,
